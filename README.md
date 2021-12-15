@@ -69,7 +69,7 @@ if [ -f $TURN_CONFIG ] ; then
     sed -i "/^cert/c\cert=\/etc\/coturn\/certs\/${domain}.fullchain.pem" $TURN_CONFIG
     sed -i "/^pkey/c\pkey=\/etc\/coturn\/certs\/${domain}.privkey.pem" $TURN_CONFIG
     fi
-#service coturn restart
+service coturn restart
 ```
 Make the deploy script executable
 ```
